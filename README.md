@@ -1,4 +1,4 @@
-# COVID-virus-simulator    
+# COVID-virus-simulator
 This Project topic is about how covid- 19( SARS-CoV-2 ) spread among the people,This is caused by the SARS-CoV-2 virus, which spreads between people, mainly when an infected person is in close contact with another person. When people are in direct or close contact (less than 1 meter apart) with an infected person.
 Showing the comparison of spread when we implement few restrictions to people like Lockdown, tracing the people who are affected by COVID-19 to quarantine which will help in decreasing the spread of virus and also using masks while being in the public area and social distancing.
 We compared the spread of 2 types of virus SARS-CoV and SARS-CoV-2, taking factors like K and R factors into consideration.
@@ -25,7 +25,7 @@ Social distance --- decrease rate of virus 10% Contact tracing --- decrease rate
 This page will show the spread of the virus with white and red color differentiating the affected and non-affected people.
 You can see the difference in the values and spread page how the restrictions and type of the virus affect the spread of virus in people.
 Our Simulator consists of People and Places .People can move from one Place to another. There are some places which are mapped to People and some Places which are not. Initially we spread 2 infected people.
-  
+
 Class Definitions:-
 UIstats:-
 It is a class used to make JFrame and set buttons and Combo boxes.
@@ -50,4 +50,24 @@ SimProperties:-
 This class has details about viruses and other variables used in various classes.
 DemoHelper:-
 It is used to run the simulation. It runs in a regular interval so that it can make changes.
-  
+
+Mathematical formula used:-
+1)We used Euclidean distance to find the distance between two places or people.
+public int getEuclideanDistance(int x1,int x2,int y1,int y2) {
+return (int)Math.sqrt(Math.pow(x1-x2, 2)+Math.pow(y1-y2, 2));
+}
+2)We used Signum function to get direction of people.
+signum|x-y|.
+3. 2 people are infected randomly and we have fixed number of people. We calculate the immunity of that person, using age which gives as chance of getting infected. If the chance is >1 then we infected that person if infected person comes to contact.
+We fixed the time for person to stay in public and house, as soon as we implement we decrease the time person is in public which will result in decrease of spread.
+4.A person gets immune after 14-21 days if the strength of the person is >1.strength is calculated using his age.
+5. Person will die if his immunity is <1. After 21-25days.
+6. We increase the distance when implemented social distance, the distance between the people is increased which result in decrease of virus spread.
+
+Conclusion:-
+1)Lockdown, Contact Tracing , Social Distancing is implemented and after that restrictions are implemented. There is decrease is the number of active cases
+Social distance --- decrease rate of virus 10%
+Contact tracing --- decrease rate of virus spread 15%
+Lockdown --- decrease rate of virus spread 70%
+2) By running a simulation for different values of R ,infection increases with increase value of R and decreases with decrease values of K.
+3) Virus 2 spreading is faster considering its R and K factors than Virus 1.
