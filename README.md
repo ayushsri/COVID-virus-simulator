@@ -20,9 +20,8 @@ Which will decrease the spread and decrease the number of active cases.
 We printed 2 graphs showing the the number of active cases Vs number of days
 Before the Lockdown, Contact Tracing , Social Distancing is implemented and after that restrictions are implemented. There is decrease is the number of active cases
 Social distance --- decrease rate of virus 10% Contact tracing --- decrease rate of virus spread 15% Lockdown --- decrease rate of virus spread 70%
-
-  Second Page (Above ) :
-This page will show the spread of the virus with white and red color differentiating the affected and non-affected people.
+  Second Page (Above ) :  
+  This page will show the spread of the virus with white and red color differentiating the affected and non-affected people.
 You can see the difference in the values and spread page how the restrictions and type of the virus affect the spread of virus in people.
 Our Simulator consists of People and Places .People can move from one Place to another. There are some places which are mapped to People and some Places which are not. Initially we spread 2 infected people.
 
